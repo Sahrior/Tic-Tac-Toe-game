@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const popup = document.getElementById("popup");
     const popupMessage = document.getElementById("popupMessage");
     const shovonWinsElement = document.getElementById("shovonWins");
-    const afifaWinsElement = document.getElementById("nupurWins");
+    const afifaWinsElement = document.getElementById("afifaWins");
     
     let currentPlayer = "X";
     let boardState = Array(9).fill(null);
