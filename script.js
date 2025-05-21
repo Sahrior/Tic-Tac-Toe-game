@@ -4,12 +4,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const popup = document.getElementById("popup");
     const popupMessage = document.getElementById("popupMessage");
     const shovonWinsElement = document.getElementById("shovonWins");
-    const nupurWinsElement = document.getElementById("nupurWins");
+    const afifaWinsElement = document.getElementById("nupurWins");
     
     let currentPlayer = "X";
     let boardState = Array(9).fill(null);
     let shovonWins = 0;
-    let nupurWins = 0;
+    let afifaWins = 0;
 
     const checkWin = (boardState) => {
         const winPatterns = [
@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const updateWins = () => {
         shovonWinsElement.textContent = shovonWins;
-        nupurWinsElement.textContent = nupurWins;
+        afifaWinsElement.textContent = afifaWins;
     };
 
     const handleClick = (e) => {
@@ -62,8 +62,8 @@ document.addEventListener("DOMContentLoaded", () => {
                         shovonWins++;
                         showPopup("Shovon Wins!");
                     } else {
-                        nupurWins++;
-                        showPopup("Nupur Wins!");
+                        afifaWins++;
+                        showPopup("pipra Wins!");
                     }
                     updateWins();
                 }
